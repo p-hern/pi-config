@@ -1,0 +1,21 @@
+{
+  "lastChangelogVersion": "0.75.5",
+  "defaultProvider": "openrouter",
+  "defaultModel": "@preset/deep-seek-v4-flash-custom",
+  "defaultThinkingLevel": "high",
+  "packages": [
+    {
+      "source": "npm:pi-web-access",
+      "extensions": [
+        "+index.ts"
+      ]
+    },
+    "npm:context-mode",
+    "npm:pi-markdown-preview",
+    "https://github.com/gsanhueza/pi-token-speed"
+  ],
+  "extensions": [
+    "+extensions\\footer-stats.ts"
+  ],
+  "hideThinkingBlock": false
+}

@@ -1,0 +1,16 @@
+{
+  "providers": {
+    "openrouter": {
+      "models": [
+        {
+          "id": "@preset/gpt-5-5-medium",
+          "name": "GPT5.5 (Medium)"
+        },
+        {
+          "id": "@preset/deep-seek-v4-flash-custom",
+          "name": "DeepSeek V4 Flash (custom)"
+        }
+      ]
+    }
+  }
+}

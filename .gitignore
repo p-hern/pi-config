@@ -1,0 +1,7 @@
+agent/auth.json
+agent/sessions/
+context-mode/
+cache/
+agent/bin/
+agent/npm/node_modules/
+agent/git/
