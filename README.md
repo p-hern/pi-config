@@ -2,6 +2,10 @@
 
 This repository holds my `pi` (https://pi.dev) configuration.
 
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Custom models and model presets](#custom-models-and-model-presets)
+
 ## Prerequisites
 
 The config was built on Windows. Other platforms may work but aren't tested.
@@ -10,7 +14,7 @@ The config was built on Windows. Other platforms may work but aren't tested.
 - **npm**
 - **An API key**
 
-## Quick start
+## Setup
 
 ### 1. Install pi
 
@@ -57,3 +61,11 @@ See [pi docs](https://pi.dev) for the full list of supported providers.
 ### 5. Congrats! You're ready to use pi
 
 ![happy](https://64.media.tumblr.com/e6abb280e3f32d29eb2d5328c1e87e1a/13702c762815cce5-42/s640x960/819c529517be9d93e78a4a11e4a95259e6a2501f.jpg)
+
+## Custom models and model presets
+
+In `agent/models.json` I have a few custom OpenRouter presets.
+
+You can put your own OpenRouter presets here, or even configure local models (w/ ollama, vLLM, etc.).
+
+Check [official docs](https://pi.dev/docs/latest/models) to learn how.
