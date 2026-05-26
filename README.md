@@ -8,7 +8,7 @@ The config was built on Windows. Other platforms may work but aren't tested.
 
 - **git**
 - **npm**
-- **An OpenRouter API key** (or swap to a different provider — see below)
+- **An API key**
 
 ## Quick start
 
@@ -16,56 +16,44 @@ The config was built on Windows. Other platforms may work but aren't tested.
 
 ```bash
 npm install -g --ignore-scripts @earendil-works/pi-coding-agent
-```
 
-Alternative:
-
-```bash
+# alternative:
 curl -fsSL https://pi.dev/install.sh | sh
 ```
 
-### 2. Clone this repo as `~/.pi`
-
-```bash
-# back up existing ~/.pi first if you want (should be pretty empty after a fresh install)
-mv .pi .pi.bak
-
-git clone https://github.com/p-hern/pi-config.git .pi
-
-cd .pi
-```
-
-### 3. Install extension dependencies
-
-```bash
-pi npm install
-```
-
-This installs the packages listed in `agent/npm/package.json` — `pi-web-access`, `context-mode`, `pi-markdown-preview` — plus their transitive dependencies.
-
-### 4. Add your API key
-
-Create `agent/auth.json` with your OpenRouter key:
-
-```json
-{
-  "openrouter": {
-    "type": "api_key",
-    "key": "sk-or-v1-..."
-  }
-}
-```
-
-> Don't commit `agent/auth.json`.
-
-### 5. Launch pi
+Then run:
 
 ```bash
 pi
 ```
 
-On the first launch pi should download `rg` and `fd` binaries into `agent/bin/`. You should be greeted with the interactive editor.
+once to create `.pi/`.
 
-## Using a different provider
+### 2. Configure this repo as a remote
 
-See [pi docs](https://pi.dev) for the full list.
+```bash
+cd .pi/
+git init # init empty repo
+git remote add origin https://github.com/p-hern/pi-config
+git fetch
+git checkout origin/main -f # discard current changes (we don't care)
+git checkout main # create main tracking origin/main
+```
+
+You should now have the whole config in `.pi/`.
+
+### 3. Install packages and extensions
+
+```bash
+pi npm install
+```
+
+### 4. Add your API key
+
+Inside pi, use `/login` to add your API key.
+
+See [pi docs](https://pi.dev) for the full list of supported providers.
+
+### 5. Congrats! You're ready to use pi
+
+![happy](https://64.media.tumblr.com/e6abb280e3f32d29eb2d5328c1e87e1a/13702c762815cce5-42/s640x960/819c529517be9d93e78a4a11e4a95259e6a2501f.jpg)
