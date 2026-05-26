@@ -10,9 +10,11 @@ This repository holds my `pi` (https://pi.dev) configuration.
 
 The config was built on Windows. Other platforms may work but aren't tested.
 
+You'll need:
+
 - **git**
 - **npm**
-- **An API key**
+- **An API key for your chosen provider**
 
 ## Setup
 
@@ -58,7 +60,7 @@ Inside pi, use `/login` to add your API key.
 
 See [pi docs](https://pi.dev) for the full list of supported providers.
 
-### 5. Congrats! You're ready to use pi
+### 5. Congrats! You're ready to go
 
 ![happy](https://64.media.tumblr.com/e6abb280e3f32d29eb2d5328c1e87e1a/13702c762815cce5-42/s640x960/819c529517be9d93e78a4a11e4a95259e6a2501f.jpg)
 
