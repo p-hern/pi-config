@@ -3,8 +3,8 @@
     "openrouter": {
       "models": [
         {
-          "id": "@preset/gpt-5-5-medium",
-          "name": "GPT5.5 (Medium)"
+          "id": "@preset/gpt-5-5-custom",
+          "name": "GPT5.5 (custom)"
         },
         {
           "id": "@preset/deep-seek-v4-flash-custom",
