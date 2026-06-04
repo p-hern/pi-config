@@ -1,7 +1,7 @@
 {
   "lastChangelogVersion": "0.78.0",
   "defaultProvider": "openrouter",
-  "defaultModel": "@preset/deep-seek-v4-flash-custom",
+  "defaultModel": "@preset/experimental",
   "defaultThinkingLevel": "high",
   "packages": [
     {
@@ -21,6 +21,6 @@
   "enabledModels": [
     "openrouter/@preset/gpt-5-5-custom",
     "openrouter/@preset/deep-seek-v4-flash-custom",
-    "openrouter/@preset/mimo-v2-5-pro-custom"
+    "openrouter/@preset/experimental"
   ]
 }
