@@ -17,5 +17,10 @@
   "extensions": [
     "+extensions\\footer-stats.ts"
   ],
-  "hideThinkingBlock": false
+  "hideThinkingBlock": false,
+  "enabledModels": [
+    "openrouter/@preset/gpt-5-5-custom",
+    "openrouter/@preset/deep-seek-v4-flash-custom",
+    "openrouter/@preset/mimo-v2-5-pro-custom"
+  ]
 }

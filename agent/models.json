@@ -7,6 +7,10 @@
           "name": "GPT5.5 (custom)"
         },
         {
+          "id": "@preset/mimo-v2-5-pro-custom",
+          "name": "MiMo V2.5 Pro (custom)"
+        },
+        {
           "id": "@preset/deep-seek-v4-flash-custom",
           "name": "DeepSeek V4 Flash (custom)"
         }
